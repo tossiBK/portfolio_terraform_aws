@@ -1,4 +1,5 @@
-# https://registry.terraform.io/providers/hashicorp/aws/4.44.0/docs/resources/autoscaling_group.html
+# https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/autoscaling_group
+# https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/autoscaling_policy
 # https://registry.terraform.io/providers/-/aws/latest/docs/resources/autoscaling_attachment
 
 

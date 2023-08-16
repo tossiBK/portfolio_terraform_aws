@@ -1,4 +1,7 @@
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb.html
+# https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_target_group
+# https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_target_group_attachment
+# https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_listener
 # https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-create-load-balancer-console.html
 
 

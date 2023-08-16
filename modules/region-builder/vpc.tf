@@ -1,5 +1,7 @@
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/subnet
+# https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route_table
+# https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route_table_association
 
 resource "aws_vpc" "main_region" {
   cidr_block = "10.0.0.0/16"
@@ -24,12 +26,11 @@ resource "aws_internet_gateway" "gw" {
 
 resource "aws_route_table" "internet_route" {
   vpc_id = aws_vpc.main_region.id
-}
 
-resource "aws_route" "internet_route_v4" {
-  destination_cidr_block = "0.0.0.0/0"
-  gateway_id             = aws_internet_gateway.gw.id
-  route_table_id         = aws_route_table.internet_route.id
+  route {
+    cidr_block = "0.0.0.0/0"
+    gateway_id  = aws_internet_gateway.gw.id
+  }
 }
 
 resource "aws_route_table_association" "rta_av1_internet" {
