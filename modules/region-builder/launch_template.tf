@@ -24,7 +24,8 @@ data "aws_ami" "amazon" {
 
 resource "aws_launch_template" "webserver_image" {
   name = "webserver_image"
-  key_name = "cloud_programming_keypair"
+  # key_name = "cloud_programming_keypair"
+  key_name = var.key_name
 
   image_id = data.aws_ami.amazon.image_id
   instance_type = var.instance_type

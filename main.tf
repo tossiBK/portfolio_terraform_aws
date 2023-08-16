@@ -16,6 +16,7 @@ module "region_europe" {
   az_1 = "eu-central-1a"
   az_2 = "eu-central-1b"
   domain = "klahan.click"
+  key_name = "cloud_programming_keypair"
 }
 
 module "region_asia" {
@@ -24,4 +25,5 @@ module "region_asia" {
   az_1 = "ap-southeast-1a"
   az_2 = "ap-southeast-1b"
   domain = "klahan.click"
+  key_name = "cloud_programming_keypair"
 }
