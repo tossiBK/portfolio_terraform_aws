@@ -41,7 +41,7 @@ module "region_europe" {
    - az_2: second availability zone you want to use in that region
    - domain: your domain name which you want to use and is registered in Area 53
 3. run “terraform init” in the console again
-   ```
+  ```
   terraform init
   ```
 5. run “terraform apply -auto-approve” for the provisioning
