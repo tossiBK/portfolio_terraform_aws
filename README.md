@@ -10,9 +10,15 @@ Repository for the implementation of the IaC for a simple website,in multiple re
 * Creating a key on each target region for the SSH access to the server ([link to guide](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-key-pairs.html))
 
 ## Installation & run:
-* Open console in the root folder of the project
-* Initially call “terraform init” to initialize all modules and the plugin for AWS
-* To run the code call “terraform apply -auto-approve”
+1. Open console in the root folder of the project
+2. To initialize all modules and the plugin for AWS call:
+  ```
+  terraform init
+  ```
+3. To run the code call:
+  ```
+  terraform apply -auto-approve
+  ```
 
 ## Using the Module for a region creation:
 As many regions as available in your account can be used. Each region needs its own module block.
