@@ -4,10 +4,10 @@ Repository for the implementation of the IaC for a simple website,in multiple re
 
 ## Prerequisites
 
-* An AWS account with the AWS CLI installed and API key configured in the AWS CLI (link to guide)
-* Installation of Terraform on the used OS (link to guide)
+* An AWS account with the AWS CLI installed and API key configured in the AWS CLI ([link to guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html))
+* Installation of Terraform on the used OS ([link to guide](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli))
 * Having a Domain registered in Area 53
-* Creating a key on each target region for the SSH access to the server (link to guide)
+* Creating a key on each target region for the SSH access to the server ([link to guide](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-key-pairs.html))
 
 ## Installation & run:
 * Open console in the root folder of the project
